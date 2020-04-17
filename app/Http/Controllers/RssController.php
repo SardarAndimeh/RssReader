@@ -17,8 +17,7 @@ class RssController extends Controller
             'permalink' => $feed->get_permalink(),
             'items' => $feed->get_items(),
         );
-        return view('rssFeed')->with('items', $items);
-
+        return view('rssFeed',$items);
     }
 
 }
