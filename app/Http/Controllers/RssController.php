@@ -12,7 +12,6 @@ class RssController extends Controller
     {
 
         $feed = FeedReader::read('http://www.bbcamerica.com/feed/');
-//        $pageTitle=$feed->get_title();
         $items = array(
             'title' => $feed->get_title(),
             'permalink' => $feed->get_permalink(),
